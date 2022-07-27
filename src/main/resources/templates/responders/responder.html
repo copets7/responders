@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet"/>
+    <title>Add user</title>
+</head>
+<body>
+
+<div th:insert="~{menu :: #nav-menu}"></div>
+
+<form th:action="@{/responders/new}" th:object="${responder}" method="post">
+    <div class="container" style="margin: 20px">
+        <h1>Add new responder</h1>
+
+        <hr>
+
+        <label for="hrTag"><b>Hr-TAG</b></label>
+        <input type="text" placeholder="Hr - Tag" th:field="*{hrTag}" id="hrTag" required>
+
+        <label for="additionalInformation"><b>Additional Information</b></label>
+        <input type="text" placeholder="additional Information" th:field="*{additionalInformation}"
+               id="additionalInformation" required>
+
+        <hr>
+
+        <button type="submit">Add</button>
+        <button onclick="location.href = '/'">Back</button>
+    </div>
+</form>
+</body>
+</html>

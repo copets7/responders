@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet" />
+    <title>Capacitors List</title>
+
+</head>
+<body>
+<div th:insert="~{menu :: #nav-menu}"></div>
+
+<div id="capacitors">
+    <div >
+        <h2>Capacitors</h2>
+        <table >
+            <thead>
+            <tr>
+                <th></th>
+                <th >Capacitors amount</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="capacitor : ${capacitors}">
+                <td></td>
+                <td th:text="${capacitor.amount}" >Amount</td>
+                <td></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button onclick="location.href = '/'">Back</button>
+</div>
+
+
+</body>
+</html>

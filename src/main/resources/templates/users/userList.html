@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet"/>
+    <title>User List</title>
+
+</head>
+<body>
+<div th:insert="~{menu :: #nav-menu}"></div>
+
+<div id="users">
+    <div>
+        <h2>Users</h2>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>User Name</th>
+                <th></th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user : ${users}">
+                <td></td>
+                <td th:text="${user.username}">Name</td>
+                <td></td>
+                <td th:text="${user.email}">Email</td>
+                <td></td>
+                <td>
+                    <form method="GET" th:action="@{users/delete/{id}(id=${user.id})}">
+                        <button type="submit" name="submit" value="value" class="link-button">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button onclick="location.href = '/users/new'">Add new user</button>
+    <br>
+    <br>
+    <button onclick="location.href = '/'">Back</button>
+</div>
+
+
+</body>
+</html>

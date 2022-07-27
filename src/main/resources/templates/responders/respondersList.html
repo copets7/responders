@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet"/>
+    <title>Responders List</title>
+
+</head>
+<body>
+<div th:insert="~{menu :: #nav-menu}"></div>
+
+<div id="responders">
+    <div>
+        <h2>Responders</h2>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>Date Of Receipt For Repair</th>
+                <th></th>
+                <th></th>
+                <th>Repair End Date</th>
+                <th></th>
+                <th></th>
+                <th>Refurbished</th>
+                <th></th>
+                <th></th>
+                <th>Hr-Tag</th>
+                <th></th>
+                <th></th>
+                <th>Additional Information</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="responder : ${responders}">
+                <td></td>
+                <td th:text="${responder.dateOfReceiptForRepair}">Date Of Receipt For Repair</td>
+                <td></td>
+                <td></td>
+                <td th:text="${responder.repairEndDate}">Repair End Date</td>
+                <td></td>
+                <td></td>
+                <td th:text="${responder.refurbished}">Refurbished</td>
+                <td></td>
+                <td></td>
+                <td th:text="${responder.hrTag}">Hr - Tag</td>
+                <td></td>
+                <td></td>
+                <td th:text="${responder.additionalInformation}">Additional Information</td>
+                <td></td>
+                <td>
+                    <form method="GET" th:action="@{responders/delete/{id}(id=${responder.id})}">
+                        <button type="submit" name="submit" value="value" class="link-button">Delete</button>
+                    </form>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <button onclick="location.href = '/responders/new'">Add new responder</button>
+    <br>
+    <br>
+    <button onclick="location.href = '/'">Back</button>
+</div>
+
+
+</body>
+</html>

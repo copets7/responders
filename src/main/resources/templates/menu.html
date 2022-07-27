@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet" />
+  <title>Menu</title>
+</head>
+<body>
+
+<div id="nav-menu" class="w3-container w3-center" style="padding: 20px">
+
+  <button onclick="location.href = '/'">Home</button>
+  <button sec:authorize="hasAuthority('ADMIN')" onclick="location.href = '/users'">Users</button>
+  <button sec:authorize="hasAuthority('ADMIN')" onclick="location.href = '/capacitors'">Capacitors</button>
+  <button sec:authorize="hasAuthority('ADMIN')" onclick="location.href = '/responders'">Responders</button>
+  <button sec:authorize="hasAuthority('ADMIN')" onclick="location.href = '/chokes'">Chokes</button>
+  <button sec:authorize="hasAuthority('ADMIN')" onclick="location.href = '/batteries'">Batteries</button>
+
+  <div class="w3-container w3-right" sec:authorize="isAuthenticated()">
+    <div>
+      <a th:href="@{/users/profile}" ><span sec:authentication="name" ></span></a>
+    </div>
+    <div >
+      <button onclick="location.href = '/logout'">Logout</button>
+    </div>
+  </div>
+
+  <div class="w3-container w3-left" sec:authorize="!isAuthenticated()">
+    <div>
+       <button onclick="location.href = '/login'">Login</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
