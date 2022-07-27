@@ -3,12 +3,27 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link th:href="@{/css/main.css}" type="text/css" rel="stylesheet"/>
     <title>Application</title>
 </head>
 <body>
 <div th:insert="~{menu :: #nav-menu}"></div>
-
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th>NEWS</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="n : ${news}">
+        <td></td>
+        <td th:text="${n}"></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
