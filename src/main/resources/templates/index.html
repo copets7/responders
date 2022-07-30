@@ -9,6 +9,7 @@
 </head>
 <body>
 <div th:insert="~{menu :: #nav-menu}"></div>
+<div class="news">
 <table>
     <thead>
     <tr>
@@ -25,5 +26,11 @@
     </tr>
     </tbody>
 </table>
+</div>
+
+<div class="weather">
+    <p th:text="${weather}"></p>
+</div>
+
 </body>
 </html>

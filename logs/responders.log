@@ -1,0 +1,184 @@
+2022-07-30 13:37:24.719  INFO 4341 --- [restartedMain] c.e.responders.RespondersApplication     : Starting RespondersApplication using Java 11.0.15 on fedora with PID 4341 (/home/andrey/IdeaProjects/responders/target/classes started by andrey in /home/andrey/IdeaProjects/responders)
+2022-07-30 13:37:24.758  INFO 4341 --- [restartedMain] c.e.responders.RespondersApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-30 13:37:24.882  INFO 4341 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-30 13:37:24.887  INFO 4341 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-30 13:37:25.818  INFO 4341 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-30 13:37:25.874  INFO 4341 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2022-07-30 13:37:26.536  INFO 4341 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-30 13:37:26.537  INFO 4341 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-07-30 13:37:26.537  INFO 4341 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-07-30 13:37:26.537  INFO 4341 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-07-30 13:37:26.537  INFO 4341 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-30 13:37:26.545  INFO 4341 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.5 5 Jul 2022]
+2022-07-30 13:37:26.552  INFO 4341 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-30 13:37:26.552  INFO 4341 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-30 13:37:26.603  INFO 4341 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-30 13:37:26.603  INFO 4341 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1712 ms
+2022-07-30 13:37:26.733  INFO 4341 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-07-30 13:37:26.734  INFO 4341 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-07-30 13:37:26.734  INFO 4341 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-07-30 13:37:26.741  INFO 4341 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-30 13:37:27.200  INFO 4341 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-30 13:37:27.237  INFO 4341 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/responders (MySQL 8.0)
+2022-07-30 13:37:27.300  INFO 4341 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.029s)
+2022-07-30 13:37:27.314  INFO 4341 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `responders`: 3
+2022-07-30 13:37:27.317  INFO 4341 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `responders` is up to date. No migration necessary.
+2022-07-30 13:37:27.478  INFO 4341 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-30 13:37:27.526  INFO 4341 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-30 13:37:27.643  INFO 4341 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-30 13:37:27.726  INFO 4341 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-30 13:37:28.201  INFO 4341 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-30 13:37:28.209  INFO 4341 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-30 13:37:28.503  WARN 4341 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-30 13:37:28.733  INFO 4341 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3126efac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ac0fc6d, org.springframework.security.web.context.SecurityContextPersistenceFilter@575d98a9, org.springframework.security.web.header.HeaderWriterFilter@6c27d7c9, org.springframework.security.web.authentication.logout.LogoutFilter@4fa2e91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ec3d59d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a667fac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e3d5bac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b8eed3c, org.springframework.security.web.session.SessionManagementFilter@32b20831, org.springframework.security.web.access.ExceptionTranslationFilter@629b6cc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@925d748]
+2022-07-30 13:37:28.865 DEBUG 4341 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-30 13:37:28.884  INFO 4341 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-30 13:37:28.930 DEBUG 4341 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2022-07-30 13:37:28.960 DEBUG 4341 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-30 13:37:28.974 DEBUG 4341 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-30 13:37:29.103  INFO 4341 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-30 13:37:29.140  INFO 4341 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-30 13:37:29.155  INFO 4341 --- [restartedMain] c.e.responders.RespondersApplication     : Started RespondersApplication in 5.241 seconds (JVM running for 6.316)
+2022-07-30 13:37:33.354  INFO 4341 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-30 13:37:33.355  INFO 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-30 13:37:33.355 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-07-30 13:37:33.355 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-07-30 13:37:33.355 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-07-30 13:37:33.356 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@192e4ae2
+2022-07-30 13:37:33.357 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@c620e8
+2022-07-30 13:37:33.357 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-30 13:37:33.357  INFO 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-30 13:37:33.375 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-07-30 13:37:33.379 DEBUG 4341 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#index(Model)
+2022-07-30 13:37:34.355 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:37:34.667 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:34.682 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:37:34.687 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:34.700 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:36.493 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-07-30 13:37:36.494 DEBUG 4341 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#index(Model)
+2022-07-30 13:37:36.919 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:37:36.936 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:36.967 DEBUG 4341 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:37:36.968 DEBUG 4341 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:36.971 DEBUG 4341 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:37.085 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:37:37.087 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:37.095 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:37.158 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-07-30 13:37:37.159 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:37.161 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-07-30 13:37:37.162 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-07-30 13:37:37.166 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-07-30 13:37:37.168 DEBUG 4341 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-07-30 13:37:37.187 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-07-30 13:37:37.188 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Jul 30 13:37:37 MSK 2022, status=404, error=Not Found, message=No message available,  (truncated)...]
+2022-07-30 13:37:37.251 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-07-30 13:37:47.282 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2022-07-30 13:37:47.283 DEBUG 4341 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#login()
+2022-07-30 13:37:47.286 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:37:47.299 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:47.318 DEBUG 4341 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:37:47.320 DEBUG 4341 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:47.323 DEBUG 4341 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:47.397 DEBUG 4341 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:37:47.399 DEBUG 4341 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:47.403 DEBUG 4341 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:49.883  INFO 4341 --- [http-nio-8080-exec-10] c.e.r.service.Impl.UserServiceImpl       : User Andrey ADMIN
+2022-07-30 13:37:49.981 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-07-30 13:37:49.982 DEBUG 4341 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#index(Model)
+2022-07-30 13:37:50.671 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:37:50.687 DEBUG 4341 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:50.731 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:37:50.733 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:50.736 DEBUG 4341 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:50.794 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:37:50.794 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:50.798 DEBUG 4341 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:59.191 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-07-30 13:37:59.191 DEBUG 4341 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#index(Model)
+2022-07-30 13:37:59.627 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:37:59.637 DEBUG 4341 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:59.682 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:37:59.683 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:59.685 DEBUG 4341 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:37:59.744 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:37:59.746 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:37:59.752 DEBUG 4341 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:39:52.112  INFO 4341 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-30 13:39:52.122  INFO 4341 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-30 13:39:52.143  INFO 4341 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-30 13:39:57.777  INFO 4653 --- [restartedMain] c.e.responders.RespondersApplication     : Starting RespondersApplication using Java 11.0.15 on fedora with PID 4653 (/home/andrey/IdeaProjects/responders/target/classes started by andrey in /home/andrey/IdeaProjects/responders)
+2022-07-30 13:39:57.779  INFO 4653 --- [restartedMain] c.e.responders.RespondersApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-30 13:39:57.825  INFO 4653 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-30 13:39:57.825  INFO 4653 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-30 13:39:58.597  INFO 4653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-30 13:39:58.646  INFO 4653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2022-07-30 13:39:59.223  INFO 4653 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-30 13:39:59.223  INFO 4653 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-07-30 13:39:59.224  INFO 4653 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-07-30 13:39:59.224  INFO 4653 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-07-30 13:39:59.224  INFO 4653 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-07-30 13:39:59.227  INFO 4653 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.5 5 Jul 2022]
+2022-07-30 13:39:59.234  INFO 4653 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-30 13:39:59.234  INFO 4653 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-30 13:39:59.284  INFO 4653 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-30 13:39:59.285  INFO 4653 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2022-07-30 13:39:59.405  INFO 4653 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.5.13 by Redgate
+2022-07-30 13:39:59.406  INFO 4653 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2022-07-30 13:39:59.406  INFO 4653 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2022-07-30 13:39:59.413  INFO 4653 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-30 13:39:59.718  INFO 4653 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-30 13:39:59.774  INFO 4653 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/responders (MySQL 8.0)
+2022-07-30 13:39:59.827  INFO 4653 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.021s)
+2022-07-30 13:39:59.843  INFO 4653 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `responders`: 3
+2022-07-30 13:39:59.844  INFO 4653 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `responders` is up to date. No migration necessary.
+2022-07-30 13:39:59.974  INFO 4653 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-30 13:40:00.019  INFO 4653 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-30 13:40:00.170  INFO 4653 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-30 13:40:00.268  INFO 4653 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-30 13:40:00.703  INFO 4653 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-30 13:40:00.709  INFO 4653 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-30 13:40:01.014  WARN 4653 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-30 13:40:01.238  INFO 4653 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c4384b7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20e6dc55, org.springframework.security.web.context.SecurityContextPersistenceFilter@2514b067, org.springframework.security.web.header.HeaderWriterFilter@63443e0e, org.springframework.security.web.authentication.logout.LogoutFilter@773ddbf5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5aa43e51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66f4003, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ccdddc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@825aa8e, org.springframework.security.web.session.SessionManagementFilter@26d6264f, org.springframework.security.web.access.ExceptionTranslationFilter@5095cc3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e00c031]
+2022-07-30 13:40:01.355 DEBUG 4653 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-07-30 13:40:01.376  INFO 4653 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-30 13:40:01.418 DEBUG 4653 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2022-07-30 13:40:01.441 DEBUG 4653 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-30 13:40:01.453 DEBUG 4653 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-07-30 13:40:01.605  INFO 4653 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-30 13:40:01.646  INFO 4653 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-30 13:40:01.663  INFO 4653 --- [restartedMain] c.e.responders.RespondersApplication     : Started RespondersApplication in 4.523 seconds (JVM running for 5.438)
+2022-07-30 13:40:05.374  INFO 4653 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-30 13:40:05.374  INFO 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-30 13:40:05.375 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-07-30 13:40:05.375 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-07-30 13:40:05.375 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-07-30 13:40:05.376 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@788c6659
+2022-07-30 13:40:05.376 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@14491531
+2022-07-30 13:40:05.376 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-30 13:40:05.377  INFO 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-30 13:40:05.400 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2022-07-30 13:40:05.405 DEBUG 4653 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#login()
+2022-07-30 13:40:05.429 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:40:05.800 DEBUG 4653 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:40:05.828 DEBUG 4653 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:40:05.836 DEBUG 4653 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:40:05.852 DEBUG 4653 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:40:05.909 DEBUG 4653 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:40:05.912 DEBUG 4653 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:40:05.920 DEBUG 4653 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:40:07.204  INFO 4653 --- [http-nio-8080-exec-4] c.e.r.service.Impl.UserServiceImpl       : The Andrey is logged in with the role  ADMIN
+2022-07-30 13:40:07.303 DEBUG 4653 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-07-30 13:40:07.304 DEBUG 4653 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.responders.controller.MainController#index(Model)
+2022-07-30 13:40:08.074 DEBUG 4653 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-07-30 13:40:08.094 DEBUG 4653 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:40:08.147 DEBUG 4653 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2022-07-30 13:40:08.150 DEBUG 4653 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:40:08.152 DEBUG 4653 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:40:08.208 DEBUG 4653 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/image/img.jpg", parameters={}
+2022-07-30 13:40:08.213 DEBUG 4653 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-07-30 13:40:08.220 DEBUG 4653 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-07-30 13:46:35.691  INFO 4653 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-30 13:46:35.697  INFO 4653 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-30 13:46:35.715  INFO 4653 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

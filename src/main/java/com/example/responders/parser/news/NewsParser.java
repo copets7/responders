@@ -15,13 +15,14 @@ public class NewsParser {
 
     private String url = "https://habr.com/ru/news/";
 
-    public List<String> parserNews(){
+    public List<String> parserNews() {
         List<String> listNews = new ArrayList<>();
+        Document doc = null;
         try {
-            Document doc = Jsoup.connect(url).
-            timeout(5000).get();
+            doc = Jsoup.connect(url).
+                    timeout(5000).get();
             Elements news = doc.getElementsByClass("tm-article-snippet__title-link");
-            for(Element el : news){
+            for (Element el : news) {
                 listNews.add(el.text() + "\n");
 //                listNews.add(" https://habr.com" + el.select("a").attr("href"));
             }

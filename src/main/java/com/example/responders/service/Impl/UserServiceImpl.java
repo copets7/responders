@@ -5,6 +5,8 @@ import com.example.responders.models.Role;
 import com.example.responders.models.User;
 import com.example.responders.repository.UserRepository;
 import com.example.responders.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,6 +22,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
+
+    private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
@@ -30,6 +34,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean save(UserDTO userDTO) {
+        logger.info("Creating new user {}" , userDTO.getUsername());
         if (!Objects.equals(userDTO.getMatchingPassword(), userDTO.getPassword())) {
             throw new RuntimeException("Password is not equals");
         }
@@ -57,6 +62,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateProfile(UserDTO userDTO) {
+        logger.info("Updated user " + userDTO.getUsername());
         User user = userRepository.findByName(userDTO.getUsername());
         if (user == null) {
             throw new RuntimeException("User not found by name : " + userDTO.getUsername());
@@ -78,7 +84,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteById(Long id) {
+        logger.info("Deleted user with id " + id);
         userRepository.deleteById(id);
+
     }
 
     @Override
@@ -90,7 +98,7 @@ public class UserServiceImpl implements UserService {
 
         List<GrantedAuthority> roles = new ArrayList<>();
         roles.add(new SimpleGrantedAuthority(user.getRole().name()));
-
+        logger.info("The " + username + " is logged in with the role " + user.getRole().name());
         return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), roles);
     }
 

@@ -10,6 +10,15 @@ body {
     width: 6em
 }
 
+.news{
+    width: 70%;
+}
+.weather{
+    color: brown;
+    position: absolute ;
+    top: 70px;
+}
+
 
 button {
     align-self: center;

@@ -9,3 +9,17 @@ spring:
     password: 70286_CopetS
   flyway:
     baseline-on-migrate: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+        org.hibernate: debug
+  file:
+    name: logs/responders.log
+
+
+
+
+

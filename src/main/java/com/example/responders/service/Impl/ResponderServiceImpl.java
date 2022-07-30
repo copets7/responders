@@ -6,6 +6,8 @@ import com.example.responders.models.Role;
 import com.example.responders.models.User;
 import com.example.responders.repository.ResponderRepository;
 import com.example.responders.service.ResponderService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -16,6 +18,7 @@ import java.util.stream.Collectors;
 @Service
 public class ResponderServiceImpl implements ResponderService {
 
+    private final Logger logger = LoggerFactory.getLogger(ResponderServiceImpl.class);
     private final ResponderRepository responderRepository;
 
     public ResponderServiceImpl(ResponderRepository responderRepository) {
@@ -24,6 +27,7 @@ public class ResponderServiceImpl implements ResponderService {
 
     @Override
     public boolean save(ResponderDTO responderDTO) {
+        logger.info("Creating new responder {}" , responderDTO.getHrTag());
         LocalDateTime localDateTime = LocalDateTime.now();
         Responder responder = new Responder(localDateTime, null, false, responderDTO.getHrTag(), responderDTO.getAdditionalInformation());
         responderRepository.save(responder);
