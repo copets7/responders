@@ -5,8 +5,10 @@ import com.example.responders.models.User;
 import com.example.responders.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.security.Principal;
 import java.util.Objects;
 
@@ -32,7 +34,9 @@ public class UserController {
     }
 
     @PostMapping("/new")
-    public String saveUser(UserDTO userDTO, Model model){
+    public String saveUser(@Valid @ModelAttribute("user") UserDTO userDTO, BindingResult bindingResult, Model model){
+        if(bindingResult.hasErrors())
+            return "users/user";
         if(userService.save(userDTO)){
             return "redirect:/users";
         }else {
@@ -56,7 +60,9 @@ public class UserController {
 
 
     @PostMapping("/profile")
-    public String updateProfileUser(UserDTO userDTO, Model model, Principal principal){
+    public String updateProfileUser(@Valid @ModelAttribute("user") UserDTO userDTO,BindingResult bindingResult, Model model, Principal principal){
+        if(bindingResult.hasErrors()) return "users/profile";
+
         if(principal == null || !Objects.equals(principal.getName(), userDTO.getUsername())){
             throw new RuntimeException("You are not authorize");
         }

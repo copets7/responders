@@ -27,7 +27,7 @@ public class ResponderServiceImpl implements ResponderService {
 
     @Override
     public boolean save(ResponderDTO responderDTO) {
-        logger.info("Creating new responder {}" , responderDTO.getHrTag());
+        logger.info("Creating new responder {}", responderDTO.getHrTag());
         LocalDateTime localDateTime = LocalDateTime.now();
         Responder responder = new Responder(localDateTime, null, false, responderDTO.getHrTag(), responderDTO.getAdditionalInformation());
         responderRepository.save(responder);

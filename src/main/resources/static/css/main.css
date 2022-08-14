@@ -1,5 +1,5 @@
 body {
-    background-image: url("image/img.jpg");
+    background-image: url("../image/img.jpg");
     background-size: 100%;
     padding: 1%;
     font-family: monospace;

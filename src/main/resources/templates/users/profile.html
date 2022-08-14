@@ -11,25 +11,37 @@
 <div th:insert="~{menu :: #nav-menu}"></div>
 
 <h1>User Profile</h1>
-<form th:action="@{/users/profile}" th:object="${user}" method="post" style="margin: 20px">
-    <label for="userName">User Name</label>
+<form th:action="@{/users/profile}" th:object="${user}" method="post">
+
+    <label for="userName"><b>User Name</b></label>
     <input style=position:absolute;left:10%; type="text" th:field="*{username}" id="userName" placeholder="User Name">
-    <br/>
-    <br/>
-    <label for="email">Email</label>
+    <div style="color: red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"> Name error</div>
+    <br>
+    <br>
+
+    <label for="email"><b>Email</b></label>
     <input style=position:absolute;left:10%; type="text" th:field="*{email}" id="email" placeholder="Email">
-    <br/>
-    <br/>
-    <label for="password">Password</label>
-    <input style=position:absolute;left:10%; type="password" th:field="*{password}" id="password" placeholder="Password">
-    <br/>
-    <br/>
-    <label for="password">Matching password</label>
+    <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"> Email error</div>
+    <br>
+    <br>
+
+    <label for="password"><b>Password</b></label>
+    <input style=position:absolute;left:10%; type="password" th:field="*{password}" id="password"
+           placeholder="Password">
+    <div style="color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> Password error</div>
+    <br>
+    <br>
+
+    <label for="password"><b>Matching password </b></label>
     <input style=position:absolute;left:10%; type="password" th:field="*{matchingPassword}" id="matchingPassword"
            placeholder="Password">
-    <br/>
-    <br/>
-    <button type="submit" >Update profile</button>
+    <div style="color: red" th:if="${#fields.hasErrors('matchingPassword')}" th:errors="*{matchingPassword}"> Password
+        error
+    </div>
+    <br>
+    <br>
+
+    <button type="submit">Update profile</button>
 </form>
 </body>
 </html>

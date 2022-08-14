@@ -18,18 +18,35 @@
         <hr>
 
         <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Enter Name" th:field="*{username}" id="name" required>
+        <input style=position:absolute;left:10%; type="text" placeholder="Enter Name" th:field="*{username}" id="name"
+               required>
+        <div style="color: red" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"> Name error</div>
+        <br>
+        <br>
 
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" th:field="*{email}" id="email" required>
+        <input style=position:absolute;left:10%; type="text" placeholder="Enter Email" th:field="*{email}" id="email"
+               required>
+        <div style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"> Email error</div>
+        <br>
+        <br>
 
         <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" th:field="*{password}" id="password" required>
+        <input style=position:absolute;left:10%; type="password" placeholder="Enter Password" th:field="*{password}"
+               id="password" required>
+        <div style="color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> Password error</div>
+        <br>
+        <br>
 
         <label for="matchingPassword"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" th:field="*{matchingPassword}" id="matchingPassword"
+        <input style=position:absolute;left:10%; type="password" placeholder="Repeat Password"
+               th:field="*{matchingPassword}" id="matchingPassword"
                required>
-
+        <div style="color: red" th:if="${#fields.hasErrors('password')}" th:errors="*{matchingPassword}"> Password
+            error
+        </div>
+        <br>
+        <br>
 
         <hr>
 
