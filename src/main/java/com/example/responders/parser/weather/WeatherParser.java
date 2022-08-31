@@ -9,7 +9,7 @@ import java.io.IOException;
 
 @Component
 public class WeatherParser {
-    private String url = "https://world-weather.ru/pogoda/belarus/grodno/";
+    private final String url = "https://world-weather.ru/pogoda/belarus/grodno/";
 
     public String weatherParser() {
         Document doc = null;
@@ -21,6 +21,7 @@ public class WeatherParser {
             throw new RuntimeException(e);
         }
         Element element = doc.getElementById("weather-now-number");
+        assert element != null;
         weather = "В Гродно сейчас " + element.text();
         return weather;
     }

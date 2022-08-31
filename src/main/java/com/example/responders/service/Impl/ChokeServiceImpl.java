@@ -47,7 +47,6 @@ public class ChokeServiceImpl implements ChokeService {
     }
 
     private ChokeDTO toDto(Choke choke){
-        ChokeDTO chokeDTO = new ChokeDTO(choke.getAmount());
-        return chokeDTO;
+     return new ChokeDTO(choke.getAmount());
     }
 }

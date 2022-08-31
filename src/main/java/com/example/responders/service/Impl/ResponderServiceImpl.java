@@ -2,8 +2,6 @@ package com.example.responders.service.Impl;
 
 import com.example.responders.dto.ResponderDTO;
 import com.example.responders.models.Responder;
-import com.example.responders.models.Role;
-import com.example.responders.models.User;
 import com.example.responders.repository.ResponderRepository;
 import com.example.responders.service.ResponderService;
 import org.slf4j.Logger;
@@ -12,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -61,13 +58,12 @@ public class ResponderServiceImpl implements ResponderService {
     }
 
     private ResponderDTO toDto(Responder responder) {
-        ResponderDTO responderDTO = new ResponderDTO(
+        return new ResponderDTO(
                 responder.getId(),
                 responder.getDateOfReceiptForRepair(),
                 responder.getRepairEndDate(),
                 responder.isRefurbished(),
                 responder.getHrTag(),
                 responder.getAdditionalInformation());
-        return responderDTO;
     }
 }

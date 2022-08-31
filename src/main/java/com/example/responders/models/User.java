@@ -10,7 +10,9 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+
     private String name;
+
     private String email;
     private String password;
     @Enumerated(EnumType.STRING)

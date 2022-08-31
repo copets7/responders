@@ -1,8 +1,6 @@
 package com.example.responders;
 
-import com.example.responders.service.Impl.SuperCapacitorImpl;
-import com.example.responders.service.SuperCapacitorService;
-import com.example.responders.service.UserService;
+import com.example.arduino.ArduinoData;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -15,6 +13,8 @@ public class RespondersApplication {
         ConfigurableApplicationContext context = SpringApplication.run(RespondersApplication.class, args);
         PasswordEncoder encoder = context.getBean(PasswordEncoder.class);
         System.out.println(encoder.encode("pass"));
+        ArduinoData arduinoDate = new ArduinoData();
+        arduinoDate.portL();
 
     }
 

@@ -46,7 +46,6 @@ public class SuperCapacitorImpl implements SuperCapacitorService {
     }
 
     private SuperCapacitorDTO toDto(SuperCapacitor superCapacitor){
-        SuperCapacitorDTO superCapacitorDTO = new SuperCapacitorDTO(superCapacitor.getAmount());
-        return superCapacitorDTO;
+      return  new SuperCapacitorDTO(superCapacitor.getAmount());
     }
 }

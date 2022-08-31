@@ -45,7 +45,6 @@ public class BatteryServiceImpl implements BatteryService {
     }
 
     private BatteryDTO toDto(Battery battery){
-        BatteryDTO batteryDTO = new BatteryDTO(battery.getAmount());
-        return batteryDTO;
+       return new BatteryDTO(battery.getAmount());
     }
 }

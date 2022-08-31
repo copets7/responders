@@ -60,6 +60,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByName(name);
     }
 
+
     @Override
     public void updateProfile(UserDTO userDTO) {
         logger.info("Updated user " + userDTO.getUsername());
