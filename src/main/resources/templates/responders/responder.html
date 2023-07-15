@@ -23,12 +23,16 @@
         <label for="additionalInformation"><b>Additional Information</b></label>
         <input type="text" placeholder="additional Information" th:field="*{additionalInformation}"
                id="additionalInformation" required>
-
         <hr>
-
         <button type="submit">Add</button>
         <button onclick="location.href = '/'">Back</button>
     </div>
 </form>
+
+<form th:action="@{/responders/new}" th:object="${tag}" method="get">
+    <input type="hidden" name="name" th:value="${tag.portL()}">
+    <button type="submit">Next</button>
+</form>
+
 </body>
 </html>

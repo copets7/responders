@@ -2,7 +2,6 @@ package com.example.responders.models;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -19,7 +18,7 @@ public class Responder {
     private String additionalInformation;
 
 
-    public Responder( LocalDateTime dateOfReceiptForRepair, LocalDateTime repairEndDate, boolean refurbished, String hrTag, String additionalInformation) {
+    public Responder(LocalDateTime dateOfReceiptForRepair, LocalDateTime repairEndDate, boolean refurbished, String hrTag, String additionalInformation) {
         this.dateOfReceiptForRepair = dateOfReceiptForRepair;
         this.repairEndDate = repairEndDate;
         this.refurbished = refurbished;

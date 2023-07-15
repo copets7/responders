@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean save(UserDTO userDTO) {
-        logger.info("Creating new user {}" , userDTO.getUsername());
+        logger.info("Creating new user {}", userDTO.getUsername());
         if (!Objects.equals(userDTO.getMatchingPassword(), userDTO.getPassword())) {
             throw new RuntimeException("Password is not equals");
         }

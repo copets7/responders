@@ -3,26 +3,27 @@ package com.example.arduino;
 import jssc.SerialPort;
 import jssc.SerialPortEvent;
 import jssc.SerialPortException;
-import jssc.SerialPortList;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ArduinoData {
 
-    public void connect (String portName){
+    public String connect(String portName) {
         SerialPort port = new SerialPort(portName);
+        StringBuffer buffer = new StringBuffer();
         try {
             port.openPort();
             port.setParams(
-                    SerialPort.BAUDRATE_9600,
+                    SerialPort.BAUDRATE_4800,
                     SerialPort.DATABITS_8,
                     SerialPort.STOPBITS_1,
                     SerialPort.PARITY_NONE);
-            port.addEventListener((SerialPortEvent event)->{
-                if (event.isRXCHAR()){
+            port.addEventListener((SerialPortEvent event) -> {
+                if (event.isRXCHAR()) {
                     try {
                         String s = port.readString();
-                        System.out.println(s);
+                        buffer.append(s);
+                        System.out.print(s);
                     } catch (SerialPortException e) {
                         throw new RuntimeException(e);
                     }
@@ -31,9 +32,10 @@ public class ArduinoData {
         } catch (SerialPortException e) {
             throw new RuntimeException(e);
         }
+        return buffer.toString();
     }
 
-    public void portL(){
+    public void portL() {
         ArduinoData obj = new ArduinoData();
         obj.connect("/dev/ttyUSB0");
     }

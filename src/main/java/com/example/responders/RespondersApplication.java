@@ -13,8 +13,8 @@ public class RespondersApplication {
         ConfigurableApplicationContext context = SpringApplication.run(RespondersApplication.class, args);
         PasswordEncoder encoder = context.getBean(PasswordEncoder.class);
         System.out.println(encoder.encode("pass"));
-        ArduinoData arduinoDate = new ArduinoData();
-        arduinoDate.portL();
+//        ArduinoData arduinoDate = new ArduinoData();
+//        arduinoDate.portL();
 
     }
 
